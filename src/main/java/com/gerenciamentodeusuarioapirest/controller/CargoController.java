@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,7 +35,7 @@ public class CargoController {
 
 	@GetMapping("/cargos")
 	public List<Cargo> listaCargos() {
-		return cargoRepository.findAll();
+		return cargoRepository.findAll(Sort.by(Sort.Direction.ASC, "nome"));
 	}
 
 	@PutMapping("/cargos")

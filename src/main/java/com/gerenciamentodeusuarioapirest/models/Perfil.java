@@ -1,6 +1,7 @@
 package com.gerenciamentodeusuarioapirest.models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -9,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.lang.NonNull;
@@ -44,6 +47,21 @@ public class Perfil implements Serializable {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public void inserirUsuario(Usuario usuario){
+		if(usuarios== null){
+			usuarios = new ArrayList<Usuario>();
+		}
+		usuarios.add(usuario);
+	}
+	
+	public boolean verificarSeHaUsuarioVinculado (){
+		if(usuarios.isEmpty()){
+			return false;
+		}else{
+			return true;
+		}
 	}
 
 }

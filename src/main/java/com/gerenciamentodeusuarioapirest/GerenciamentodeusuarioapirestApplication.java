@@ -11,4 +11,5 @@ public class GerenciamentodeusuarioapirestApplication {
 		SpringApplication.run(GerenciamentodeusuarioapirestApplication.class, args);
 	}
 
+
 }

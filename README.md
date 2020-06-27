@@ -1,8 +1,7 @@
 # gerenciamentodeusuarioapirest
 
 Este projeto compõe o Backend de uma aplicação Web de um sistema de gerenciamento de usuários.
-GuitHub: https://github.com/DavidGervasio/gerenciamentodeusuarioapirest
- 
+
 # Tecnologias utilizadas
 Java 
 Spring

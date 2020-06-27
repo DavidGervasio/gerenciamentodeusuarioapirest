@@ -4,7 +4,6 @@ Este projeto compõe o Backend de uma aplicação Web de um sistema de gerenciam
 
 # Tecnologias utilizadas
 Java 
-Spring
 Spring Framework
 PostgreSQL
  

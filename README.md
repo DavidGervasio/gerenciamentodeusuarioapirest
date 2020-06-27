@@ -3,9 +3,9 @@
 Este projeto compõe o Backend de uma aplicação Web de um sistema de gerenciamento de usuários.
 
 # Tecnologias utilizadas
-Java 
-Spring Framework
-PostgreSQL
+* Java 
+* Spring Framework
+* PostgreSQL
  
 # Instalação e execução do programa
 * 1-Salve a aplicação em um diretório. 
